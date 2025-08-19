@@ -5,27 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Vonachen | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>John Vonachen</h1>
-        <p>Software Engineer | IT Professional</p>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Jack Vonachen</h1>
+        <p>Software Engineer | IT Professional | Aspiring DevOps Engineer</p>
     </header>
 
     <main>
-        <section class="projects">
-            <h2>Projects</h2>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Creating Digital Solutions That Matter</h2>
+                <p>I build applications that solve real-world problems with clean code and intuitive design.</p>
+            </div>
+        </section>
+
+        <!-- Featured Project Section -->
+        <section id="featured" class="featured-project">
+            <div class="project-visual">
+                <div class="app-preview">
+                    <div class="browser-mockup">
+                        <div class="browser-bar">
+                            <div class="browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="browser-content">
+                            <h3>Chicago Transit Tracker</h3>
+                            <p>Real-time tracking of CTA trains and buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <span class="featured-badge">Featured Project</span>
+                <h2>Chicago Transit Tracker</h2>
+                <p class="project-description">A comprehensive web application that provides real-time tracking of Chicago Transit Authority trains and buses. Features an interactive map, station information, and AI-powered route assistance.</p>
+                <div class="tech-stack">
+                    <span>JavaScript</span>
+                    <span>Leaflet.js</span>
+                    <span>Node.js</span>
+                    <span>Heroku</span>
+                </div>
+                <div class="project-actions">
+                    <a href="https://cta-tracker-site-2c5ea805ae32.herokuapp.com/" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/jackvon1221" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Other Projects</h2>
             <ul>
-                <li><a href="https://github.com/jackvon1221/productivityapp/releases/tag/v1.0" target="_blank">Productivity Tracker</a></li>
-                <li><a href="https://github.com/jackvon1221/vacationapp/releases/tag/v1.0" target="_blank">Vacation Booking App</a></li>
-                <li><a href="https://github.com/jackvon1221/kitchenchaos" target="_blank">Kitchen Chaos Unity Game (WIP)</a></li>
+                <li>
+                    <a href="https://github.com/jackvon1221/productivityapp/releases/tag/v1.0" target="_blank">
+                        <i class="fas fa-tasks"></i> Productivity Tracker
+                    </a>
+                    <p>Application for tracking daily productivity and tasks</p>
+                </li>
+                <li>
+                    <a href="https://github.com/jackvon1221/vacationapp/releases/tag/v1.0" target="_blank">
+                        <i class="fas fa-plane"></i> Vacation Booking App
+                    </a>
+                    <p>Platform for booking and managing vacation plans</p>
+                </li>
+                <li>
+                    <a href="https://github.com/jackvon1221/kitchenchaos" target="_blank">
+                        <i class="fas fa-gamepad"></i> Kitchen Chaos Unity Game <span class="wip-badge">WIP</span>
+                    </a>
+                    <p>Unity-based cooking simulation game with chaotic gameplay elements</p>
+                </li>
             </ul>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a software engineer and IT professional passionate about creating applications that make people's lives easier. With expertise in full-stack development and a focus on user experience, I build solutions that are both functional and enjoyable to use.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or playing video games.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>Node.js</span>
+                        <span>Unity</span>
+                        <span>Git</span>
+                        <span>UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities and collaborations.</p>
+            <div class="contact-info">
+                <a href="mailto:jackvonachen@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> jackvonachen@gmail.com
+                </a>
+                <a href="tel:15179271519" class="contact-link">
+                    <i class="fas fa-phone"></i> (517) 927-1519
+                </a>
+                <a href="https://github.com/jackvon1221" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </section>
     </main>
 
+    <!-- AI Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-title">Portfolio Assistant</div>
+            <button class="chatbot-close" id="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">
+                Hi there! I can answer questions about Jack's portfolio, skills, and projects. What would you like to know?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Ask about my projects or experience...">
+            <button id="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    
+    <button class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-robot"></i>
+    </button>
+
     <footer>
+        <p>© 2023 Jack Vonachen. All rights reserved.</p>
         <p>Contact me at jackvonachen@gmail.com | Phone: (517) 927-1519</p>
     </footer>
+
+    <script>
+        // Chatbot functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatbot = document.getElementById('chatbot');
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotClose = document.getElementById('chatbot-close');
+            const chatbotMessages = document.getElementById('chatbot-messages');
+            const chatbotInput = document.getElementById('chatbot-input');
+            const chatbotSend = document.getElementById('chatbot-send');
+            
+            // Toggle chatbot visibility
+            chatbotToggle.addEventListener('click', () => {
+                chatbot.classList.toggle('active');
+            });
+            
+            chatbotClose.addEventListener('click', () => {
+                chatbot.classList.remove('active');
+            });
+            
+            // Send message function
+            function sendMessage() {
+                const message = chatbotInput.value.trim();
+                if (message) {
+                    addMessage(message, 'user');
+                    chatbotInput.value = '';
+                    
+                    // Process the message and generate a response
+                    setTimeout(() => {
+                        const response = generateResponse(message);
+                        addMessage(response, 'bot');
+                    }, 500);
+                }
+            }
+            
+            // Send message on button click or Enter key
+            chatbotSend.addEventListener('click', sendMessage);
+            chatbotInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            // Add message to chat
+            function addMessage(text, sender) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message', sender);
+                messageElement.textContent = text;
+                chatbotMessages.appendChild(messageElement);
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            }
+            
+            // Simple AI response generator
+            function generateResponse(message) {
+                const lowerMsg = message.toLowerCase();
+                
+                // Greetings
+                if (lowerMsg.includes('hi') || lowerMsg.includes('hello') || lowerMsg.includes('hey')) {
+                    return "Hello! I can tell you about Jack's skills, projects, and experience. What would you like to know?";
+                }
+                
+                // About questions
+                if (lowerMsg.includes('who are you') || lowerMsg.includes('what are you')) {
+                    return "I'm an AI assistant for Jack's portfolio. I can answer questions about his work and experience.";
+                }
+                
+                if (lowerMsg.includes('skill') || lowerMsg.includes('technology') || lowerMsg.includes('stack')) {
+                    return "Jack works with JavaScript, HTML/CSS, Node.js, Unity, and has experience with UI/UX design. He's also proficient with Git and deployment platforms like Heroku.";
+                }
+                
+                if (lowerMsg.includes('experience') || lowerMsg.includes('background')) {
+                    return "Jack is a software engineer and IT professional with experience in full-stack development. He enjoys creating applications that solve real-world problems.";
+                }
+                
+                // Project questions
+                if (lowerMsg.includes('project') || lowerMsg.includes('work')) {
+                    return "Jack has created several projects including the Chicago Transit Tracker, Productivity Tracker, Vacation Booking App, and a Unity game called Kitchen Chaos.";
+                }
+                
+                if (lowerMsg.includes('chicago') || lowerMsg.includes('transit') || lowerMsg.includes('cta') || lowerMsg.includes('train')) {
+                    return "The Chicago Transit Tracker is a web app that provides real-time tracking of CTA trains and buses. It features an interactive map and AI-powered route assistance. You can try it at: https://cta-tracker-site-2c5ea805ae32.herokuapp.com/";
+                }
+                
+                if (lowerMsg.includes('productivity') || lowerMsg.includes('task')) {
+                    return "The Productivity Tracker helps users monitor their daily productivity and manage tasks efficiently. It's available on GitHub.";
+                }
+                
+                if (lowerMsg.includes('vacation') || lowerMsg.includes('booking')) {
+                    return "The Vacation Booking App is a platform for planning and booking vacations. It simplifies the travel planning process.";
+                }
+                
+                if (lowerMsg.includes('game') || lowerMsg.includes('unity') || lowerMsg.includes('kitchen') || lowerMsg.includes('chaos')) {
+                    return "Kitchen Chaos is a Unity-based cooking simulation game with chaotic gameplay elements. It's currently a work in progress.";
+                }
+                
+                if (lowerMsg.includes('contact') || lowerMsg.includes('email') || lowerMsg.includes('phone')) {
+                    return "You can reach Jack at jackvonachen@gmail.com or (517) 927-1519. He's also on GitHub at https://github.com/jackvon1221";
+                }
+                
+                // Default response
+                return "I'm not sure I understand. I can tell you about Jack's projects, skills, or experience. Try asking about the Chicago Transit Tracker or his technical skills.";
+            }
+        });
+    </script>
 </body>
 </html>
