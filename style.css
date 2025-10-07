@@ -700,3 +700,10 @@ footer p {
         align-items: flex-start;
     }
 }
+/* Game Demo Video */
+#game-demo .project-demo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
